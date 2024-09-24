@@ -67,7 +67,7 @@ const HeaderView = ({ className, shop, ...rest }: Props) => {
             <h2 className="flex items-center gap-2 text-lg font-semibold capitalize text-muted-black">
               {shop?.name}
               <Link
-                href={`${process.env.NEXT_PUBLIC_SHOP_URL}/${locale}/shops/${shop?.slug}`}
+                href={`${process.env.NEXT_PUBLIC_SHOP_URL.replace(/\/+$/, '')}/${locale}/shops/${shop?.slug}`}
                 target="_blank"
                 className="text-xl text-[#929292] transition-colors duration-300 hover:text-opacity-60"
                 title={shop?.name}
