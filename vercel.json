@@ -41,11 +41,11 @@
       "NEXT_PUBLIC_VERSION": "6.6.1"
     }
   },
-  "rewrites": [
+  "redirects": [
     {
       "source": "/(.*//.*)",
       "destination": "/$1", 
-      "status": 301
+      "permanent": true
     }
   ]
 }
