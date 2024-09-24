@@ -529,13 +529,13 @@ export default function CreateOrUpdateProductForm({
               <div className="ml-auto">
                 {showPreviewButton && (
                   <Link
-                    href={`${process.env.NEXT_PUBLIC_SHOP_URL.replace(/\/+$/, '')}/products/preview/${router.query.productSlug}`}
+                    href={`${process.env.NEXT_PUBLIC_SHOP_URL}/products/preview/${router.query.productSlug}`}
                     target="_blank"
                     className="inline-flex h-12 flex-shrink-0 items-center justify-center rounded border !border-accent bg-transparent px-5 py-0 text-sm font-semibold leading-none !text-accent outline-none transition duration-300 ease-in-out me-4 hover:border-accent hover:bg-accent hover:!text-white focus:shadow focus:outline-none focus:ring-1 focus:ring-accent-700 md:text-base"
                   >
                     <EyeIcon className="w-4 h-4 me-2" />
                     {t('form:button-label-preview-product-on-shop')}
-                  </Link>                
+                  </Link>
                 )}
                 <Button
                   loading={updating || creating}

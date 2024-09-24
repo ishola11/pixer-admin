@@ -40,5 +40,12 @@
       "NEXT_PUBLIC_MESSAGE_EVENT": "message.event",
       "NEXT_PUBLIC_VERSION": "6.6.1"
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*//.*)",
+      "destination": "/$1", 
+      "status": 301
+    }
+  ]
 }

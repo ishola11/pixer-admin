@@ -106,7 +106,7 @@ const ReviewList = ({
             />
           </div>
           <Link
-            href={`${process.env.NEXT_PUBLIC_SHOP_URL.replace(/\/+$/, '')}/products/${product?.slug}`}
+            href={`${process.env.NEXT_PUBLIC_SHOP_URL}/products/${product?.slug}`}
           >
             <span className="truncate whitespace-nowrap font-medium">
               {product?.name}
