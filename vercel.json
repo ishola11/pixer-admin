@@ -40,12 +40,5 @@
       "NEXT_PUBLIC_MESSAGE_EVENT": "message.event",
       "NEXT_PUBLIC_VERSION": "6.6.1"
     }
-  },
-  "redirects": [
-    {
-      "source": "/(.*//.*)",
-      "destination": "/$1", 
-      "permanent": true
-    }
-  ]
+  }
 }

@@ -155,7 +155,16 @@ export const Routes = {
         : `/${language}/products/${slug}/translate`;
     },
   },
-  visitStore: (slug: string) => `${process.env.NEXT_PUBLIC_SHOP_URL}/${slug}`,
+  visitStore: (slug?: string) => {
+    let url = process.env.NEXT_PUBLIC_SHOP_URL || '';
+  
+    // Avoid adding an extra slash if the slug is just "/"
+    if (slug && slug !== '/') {
+      url += `/${slug}`;
+    }
+  
+    return url;
+  },  
   vendorRequestForFlashSale: {
     ...routesFactory('/flash-sale/vendor-request'),
   },
