@@ -16,6 +16,7 @@ import { PaymongoIcon } from '@/components/icons/payment-gateways/paymongo';
 import { FlutterwaveIcon } from '@/components/icons/payment-gateways/flutterwave';
 import BitpayIcon from '@/components/icons/payment-gateways/bitpay';
 import CoinbaseIcon from '@/components/icons/payment-gateways/coinbase';
+import BlockonomicsIcon from '@/components/icons/payment-gateways/blockonomics';
 
 interface WebHookURLProps {
   gateway: gatewayType;
@@ -44,6 +45,7 @@ const WebHookURL = ({ gateway }: WebHookURLProps) => {
     flutterwave: <FlutterwaveIcon className="h-4 w-auto" />,
     coinbase: <CoinbaseIcon className="h-8 w-auto" />,
     bitpay: <BitpayIcon className="h-4 w-auto" />,
+    blockonomics: <BlockonomicsIcon className="h-4 w-auto" />,
   };
   const url = `${
     process.env.NEXT_PUBLIC_REST_API_ENDPOINT
